@@ -26,7 +26,7 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, $color-grey-dark-2, $color-grey-dark-3);
             }
 
         }
@@ -53,8 +53,16 @@
         border-top-right-radius: 3px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-            url(../img/test.jpg);
+            background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark), 
+            url(../img/gym.jpg);
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), 
+            url(../img/craigslist.jpeg);
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-blue-light, $color-secondary-dark), 
+            url(../img/mobile.jpg);
         }
     }
 
@@ -78,8 +86,8 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-secondary-light, .85), 
-            rgba($color-secondary-dark, .85));
+            rgba($color-grey-dark-2, .85), 
+            rgba($color-grey-dark-3, .85));
         }
     }
 
