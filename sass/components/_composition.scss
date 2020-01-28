@@ -1,0 +1,30 @@
+.composition {
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    &__photo {
+        width: 10rem;
+        height: 10rem;
+        -webkit-filter: drop-shadow(1px 1px 2px #222);
+        filter: drop-shadow(1px 1px 2px #222);
+        border-radius: 2px;
+        z-index: 10;
+        transition: all .2s;
+     
+
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 28.333333%;
+        }
+        
+
+        &:hover {
+            transform: scale(1.1) translateY(0.2rem);
+            -webkit-filter: drop-shadow(1.5px 1.5px 4px #222);
+            filter: drop-shadow(1.5px 1.5px 4px #222);
+            z-index: 20;
+        }
+    }
+}

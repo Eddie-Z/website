@@ -1,236 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/gearbox-static.png" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/tab.ico">
+    <title>Eddie Zheng | Full Stack Engineer</title>
+</head>
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Eddie Zheng | Portfolio</title>
-    </head>
-    
-    <body>
+<body>
+    <!-- preload -->
+    <div class="header-img">
+        <img style="display: none;" src="img/fast.gif" alt="">
+    </div>
 
-        <header class="header">
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Eddie Zheng</span>
-                    <span class="heading-primary--sub">Full-Stack Web Developer</span>
-                </h1>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/E.png" alt="Eddie" class="header__logo">
+        </div>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Eddie Zheng</span>
+                <span class="heading-primary--sub">Full Stack Engineer</span>
+            </h1>
 
-                <a href="#heading" class="btn btn--white btn--animated">View my Work</a>
+            <a href="#projects" class="btn btn--white btn--animated smooth-goto">See Projects</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Front End Focused
+                    <br>With Full Stack Experience
+                </h2>
             </div>
-        </header>
 
-        <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Experience
-                    </h2>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">1010TIRES</h3>
+                    <p class="paragraph">
+                        I spent 4 months at 1010tires as a Full Stack Engineer. One of the major problems was that 
+                        inventory stock was out of date and done manually. I created multiple CRON job scripts to scrape 
+                        supplier’s website into XLSX format. This data was then fed into the backend to update existing outdated data. 
+                        In addition, I’ve optimized the uploading new brand/tires process by creating a script to upload massaged excel
+                         data into the backend and frontend. I’ve also initiated the project to 
+                        optimize customer service workflow by integrating Google API into the backend. This was done using C#, Selenium and SQL.
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">GRAVIT-E TECHNOLOGIES</h3>
+                    <p class="paragraph">
+                        The two main objectives at Gravit-e Technologies were to contribute to the testing 
+                        process for a variety of clients and to help ramp up automation. I coordinated effectively with teammates 
+                        to perform defect tracking and management in JIRA to achieve high quality releases. I developed numerous helpers 
+                        like PDF parsers, email readers for Katalon templates to help speed up automation process. During my work term,
+                         I worked heavily with Git, SQL, Java and Selenium. During my work term at Gravit-e Technologies,
+                         I discovered my hunger to expand my Frontend Development skills and creating high quality scalable code.
+                    </p>
+
                 </div>
-
-                <div class="row">
-                            <div class="col-1-of-2">
-                        <div class="feature-box">
-                            <i class="feature-box__icon  icon-basic-globe"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">1010Tires</h3>
-                            <p class="feature-box__text">
-                                    I spent 4 months at 1010tires as a backend developer. One of the major problems was that inventory stock was out of date and done manually. I created multiple CRON job scripts to scrape supplier’s website into xlsx format. This data was then fed into the backend to update existing products. In addition, I’ve optimized the uploading new brand/tires process by creating a script to upload massaged excel data into the backend and frontend. I’ve also imitated the project to optimize customer service workflow by integrating Google API into the backend. This was done using C#, Selenium and SQL.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-2">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-world"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Gravit-e Technologies</h3>
-                            <p class="feature-box__text">
-                                    The two main objectives at Gravit-e Technologies were to contribute to testing process of a variety of clients and to help ramp up automation. I coordinated effectively with teammates to perform defect tracking and management in JIRA to achieve high quality. I developed numerous helpers like PDF parsers, email readers for Katalon templates to help speed up automation progression. During my workterm, I worked heavily with Git, SQL and Katalon Studios. During my work term at Gravit-e Technologies, I discovered my hunger to expand my Frontend Development and creating high quality scalable code.t
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section class="section-projects">
-                    <div class="u-center-text u-margin-bottom-big">
-                        <h2 class="heading-secondary">
-                            Personal Projects
-                        </h2>
-                    </div>
-    
-                    <div class="row">
-                        <div class="col-1-of-3">
-                                <div class="card">
-                                    <div class="card__side card__side--front">
-                                         <div class="card__picture card__picture--1">
-                                             &nbsp;
-                                         </div>
-                                         <h4 class="card__heading">
-                                             <span class="card__heading-span card__heading-span--1">ReactJS Gym Project</span>
-                                         </h4>
-                                         <div class="card__details">
-                                             <ul>
-                                                    <li>ReactJS</li>
-                                                    <li>Context API</li>
-                                                    <li>React Hooks</li>
-                                                    <li>Router</li>
-                                                    <li>Firebase</li>
-                                             </ul>
-                                         </div>
-                                    </div>
-                                    <div class="card__side card__side--back card__side--back-1">
-                                         <div class="card__cta">
-                                             <div class="card__text-box">
-                                                Find out more
-                                             </div>
-                                             <a href="#popup" class="btn btn--white">Github</a>
-                                         </div>
-                                     </div>
-                                </div>
-                        </div>
-    
-    
-                        <div class="col-1-of-3">
-                                <div class="card">
-                                        <div class="card__side card__side--front">
-                                             <div class="card__picture card__picture--2">
-                                                 &nbsp;
-                                             </div>
-                                             <h4 class="card__heading">
-                                                 <span class="card__heading-span card__heading-span--1">Craigslist Parser</span>
-                                             </h4>
-                                             <div class="card__details">
-                                                 <ul>
-                                                     <li>Golang and Colly</li>
-                                                     <li>Parses Craigslist into XLSX</li>
-                                                     <li>Multithreaded</li>
-                                                 </ul>
-                                             </div>
-                                        </div>
-                                        <div class="card__side card__side--back card__side--back-1">
-                                             <div class="card__cta">
-                                                 <div class="card__text-box">
-                                                    Find out more
-                                                 </div>
-                                                 <a href="#popup" class="btn btn--white">Github</a>
-                                             </div>
-                                         </div>
-                                    </div>
-                        </div>
-
-                        <div class="col-1-of-3">
-                                <div class="card">
-                                        <div class="card__side card__side--front">
-                                             <div class="card__picture card__picture--3">
-                                                 &nbsp;
-                                             </div>
-                                             <h4 class="card__heading">
-                                                 <span class="card__heading-span card__heading-span--1">Resize this website</span>
-                                             </h4>
-                                             <div class="card__details">
-                                                 <ul>
-                                                     <li>Mediaqueries</li>
-                                                     <li>Sass + Rem units</li>
-                                                     
-                                                 </ul>
-                                             </div>
-                                        </div>
-                                        <div class="card__side card__side--back card__side--back-1">
-                                             <div class="card__cta">
-                                                 <div class="card__text-box">
-                                                    Find out more
-                                                 </div>
-                                                 <a href="#popup" class="btn btn--white">Github</a>
-                                             </div>
-                                         </div>
-                                    </div>
-                        </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="img/C.png" alt="C#" class="composition__photo composition__photo--p1">
+                        <img src="img/selenium.png" alt="Node" class="composition__photo composition__photo--p3">
+                        <img src="img/react.png" alt="React" class="composition__photo composition__photo--p2">
+                        <img src="img/sql.png" alt="Sql" class="composition__photo composition__photo--p4">
                       
-                        </div>
+                        <img src="img/git.png" alt="git" class="composition__photo composition__photo--p5">
+                        <img src="img/css.png" alt="CSS" class="composition__photo composition__photo--p6">
+                        <img src="img/html.png" alt="Html" class="composition__photo composition__photo--p7">
+                        <img src="img/javascript.png" alt="Javascript" class="composition__photo composition__photo--p8">
+
                     </div>
-    
-                   
-                </section>
-
-
-        </main>
-        <!--
-        <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
+        </section>
 
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-
+        <section class="section-features">
             <div class="row">
                 <div class="col-1-of-4">
-                    Col 1 of 4
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-webpage"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Front End</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3 | SCSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
                 <div class="col-1-of-4">
-                    Col 1 of 4
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-share"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Server</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>NodeJS</li>
+                                <li>Express</li>
+                                <li>Python</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
                 <div class="col-1-of-4">
-                    Col 1 of 4
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-server2"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Database</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>Firebase</li>
+                                <li>mySQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
                 <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-cloud"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Deployment</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>Git</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        -->
 
-    </body>
+        <section class="section-tours" id="projects">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Project Portfolio
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-1">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+
+                                <span class="card__heading-span--1">
+                                    GYM APP
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>ReactJS</li>
+                                    <li>Context API</li>
+                                    <li>React Hooks</li>
+                                    <li>Router</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+
+                            <div class="card__cta">
+
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            Routine builder
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/Eddie-Z/gymapp" class="btn btn--white btn--github">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-2">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <div class="card__heading">
+                                <span class="card__heading-span--6">
+                                    CRAIGSLIST PARSER
+                                </span>
+                            </div>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Golang and Colly</li>
+                                    <li>Parse Craigslist into XLSX</li>
+                                    <li>Multithread</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                           Multithreaded scraper 
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/Eddie-Z/golangCraigslistParser" class="btn btn--white btn--github">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-3">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <div class="card__heading">
+                                <span class="card__heading-span--3">
+                                    Website Clone
+                                </span>
+                            </div>
+                            <div class="card__details">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>                     
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            Cloning David Goggins website
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/Eddie-Z/www.davidgoggins.com_clone" class="btn btn--white btn--github">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--second row-->
+                <div class="row">
+                    <div class="col-1-of-3 single-col">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-4">
+                                <div class="card__picture card__picture--4">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span--4">
+                                        Alzheimer Game
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Swift</li>
+                                        <li>ArKIT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-4">
+                                <div class="card__cta">
+                                    <div class="card__box">
+                                        <div class="card__description">
+                                            <p>
+                                                AR Mobile game to track Alzheimer progression
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/Eddie-Z/CMPT275Group5" class="btn btn--white btn--github">Source Code</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-5">
+                            <div class="card__picture card__picture--5">
+                                &nbsp;
+                            </div>
+                            <div class="card__heading">
+                                <span class="card__heading-span--5">
+                                    VARIOUS CSS PROJECTS
+                                </span>
+                            </div>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Grids</li>
+                                    <li>Flexbox</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-5">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            Created various projects to practice CSS 
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/Eddie-Z?tab=repositories5" class="btn btn--white btn--github">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3 single-col">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-6">
+                                <div class="card__picture card__picture--6">
+                                    &nbsp;
+                                </div>
+                                <h5 class="card__heading">
+                                    <span class="card__heading-span--6">
+                                        A.I HMM
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Hidden Markov Model</li>
+                                        <li>Backpropgration</li>
+                                        <li>Compute Activation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-6">
+                                <div class="card__cta">
+                                    <div class="card__box">
+                                        <div class="card__description">
+                                            <p>
+                                                Hidden Markov Model created using Python
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/Eddie-Z/ArtificialIntelligence310" class="btn btn--white btn--github">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <a href="#top">
+                <img src="img/E.png" alt="Logo" class="footer__logo smooth-goto">
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://github.com/Eddie-Z" class="footer__link">GitHub</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Site by
+                    <a href=# class="footer__link"> Eddie Zheng </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
 </html>

@@ -1,13 +1,16 @@
 .card {
 
-    // FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
+    -webkit-perspective: 150rem;
     position: relative;
-    height: 52rem;
-    
+    height: 40rem;    
+
     &__side {
-        height: 52rem;
+        color: #fff;
+        font-size: 2rem;
+
+        height: 35rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -21,110 +24,188 @@
         &--front {
             background-color: $color-white;
         }
-
         &--back {
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-grey-dark-2, $color-grey-dark-3);
+                background-image: linear-gradient(to right bottom, $color-card-1-primary, $color-card-1-secondary);
             }
-
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-card-2-primary, $color-card-2-secondary);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-card-3-primary, $color-card-3-secondary);
+            }
+            &-4 {
+                background-image: linear-gradient(to right bottom, $color-card-4-primary, $color-card-4-secondary);
+            }
+            &-5 {
+                background-image: linear-gradient(to right bottom, $color-card-5-primary, $color-card-5-secondary);
+            }
+            &-6 {
+                background-image: linear-gradient(to right bottom, $color-card-6-primary, $color-card-6-secondary);
+            }
         }
     }
-  
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
     }
-
     &:hover &__side--back {
-        transform: rotateY(0);
+        transform: rotateY(0deg);
     }
 
-
-    // FRONT SIDE STYLING
+    //FRONT SIDE STYLE
     &__picture {
         background-size: cover;
-        height: 23rem;
+        background-position: center center;
+        height: 12rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);        
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark), 
+            background-image: linear-gradient(to right bottom, $color-card-1-primary, $color-card-1-secondary), 
             url(../img/gym.jpg);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), 
-            url(../img/craigslist.jpeg);
+            background-image: linear-gradient(to right bottom, $color-card-2-primary, $color-card-2-secondary),
+            url(../img/craiglist.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-blue-light, $color-secondary-dark), 
-            url(../img/mobile.jpg);
+            background-image: linear-gradient(to right bottom, $color-card-3-primary, $color-card-3-secondary),
+            url(../img/dg.jpg);
+        }
+        &--4 {
+            background-image: linear-gradient(to right bottom, $color-card-4-primary, $color-card-4-secondary),
+             url(../img/alzheimer.jpg);
+        }
+        &--5 {
+            background-image: linear-gradient(to right bottom, $color-card-5-primary, $color-card-5-secondary),
+             url(../img/css.jpeg);
+        }
+        &--6 {
+            background-image: linear-gradient(to right bottom, $color-card-6-primary, $color-card-6-secondary),
+             url(../img/hmm.jpg);
         }
     }
 
     &__heading {
         font-size: 2.8rem;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         text-align: right;
         color: $color-white;
         position: absolute;
-        top: 12rem;
+        top: 2rem;
         right: 2rem;
-        width: 75%;
-    
+        width: 70%;
+        line-height: 3.5rem;
     }
 
     &__heading-span {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
+        -moz-box-decoration-break: clone;
         box-decoration-break: clone;
-
         &--1 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-grey-dark-2, .85), 
-            rgba($color-grey-dark-3, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-card-1-primary, .9), rgba($color-card-1-secondary, .9));
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-card-2-primary, .9), rgba($color-card-2-secondary, .9));
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-card-3-primary, .9), rgba($color-card-3-secondary, .9));
+        }
+        &--4 {
+            background-image: linear-gradient(to right bottom, rgba($color-card-4-primary, .9), rgba($color-card-4-secondary, .9));
+        }
+        &--5 {
+            background-image: linear-gradient(to right bottom, rgba($color-card-5-primary, .9), rgba($color-card-5-secondary, .9));
+        }
+        &--6 {
+            background-image: linear-gradient(to right bottom, rgba($color-card-6-primary, .9), rgba($color-card-6-secondary, .9));
         }
     }
 
     &__details {
-        padding: 3rem;
-
+        padding: 1rem 3rem;
+        color: darkslategrey;
+        
         ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
+        }
+        li {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0.5rem;
 
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
+            &:not(:last-child) {
+                border-bottom: 1px solid #eee;
             }
         }
     }
 
-    // FRONT SIDE STYLING
     &__cta {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 80%;
         text-align: center;
     }
 
-    &__text-box {
+    &__box {
         text-align: center;
-        color: $color-white;
-        margin-bottom: 4rem;
-        text-transform: uppercase;
     }
+    &__description {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @include respond(tab-port) {
+         height: auto;
+        border-radius: 3px;        
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        margin: 0 3rem;
+
+         &__side {
+            //  color: #fff;
+            //  font-size: 2rem;
+             height: auto;
+             position: relative;
+             box-shadow: none;
+
+             &--back {
+                 transform: rotateY(0);
+                 clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+             }
+         }
+
+         &:hover &__side--front {
+             transform: rotateY(0)
+         }
+
+         .card__details {
+             padding: 1rem 3rem;
+         }
+
+         &__cta {
+             position: relative;
+             top: 0%;
+             left: 0%;
+             transform: translate(0);
+             width: 100%;
+             padding: 7rem 4rem 4rem 4rem;
+         }
+
+         &__box {
+             text-align: center;
+         }
+    }
+
 }
