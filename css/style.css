@@ -643,23 +643,23 @@ body {
 }
 
 .card__picture--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#44b2e6), to(#05044d)), url(../img/dg.jpg);
-  background-image: linear-gradient(to right bottom, #44b2e6, #05044d), url(../img/dg.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#44b2e6), to(#05044d)), url(../img/2.jpg);
+  background-image: linear-gradient(to right bottom, #44b2e6, #05044d), url(../img/2.jpg);
 }
 
 .card__picture--4 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#6b330e), to(#978f1c)), url(../img/alzheimer.jpg);
-  background-image: linear-gradient(to right bottom, #6b330e, #978f1c), url(../img/alzheimer.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6b330e), to(#978f1c)), url(../img/cards.jpg);
+  background-image: linear-gradient(to right bottom, #6b330e, #978f1c), url(../img/cards.jpg);
 }
 
 .card__picture--5 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#396b2a), to(#1b2e21)), url(../img/css.jpeg);
-  background-image: linear-gradient(to right bottom, #396b2a, #1b2e21), url(../img/css.jpeg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#396b2a), to(#1b2e21)), url(../img/nutrition.jpg);
+  background-image: linear-gradient(to right bottom, #396b2a, #1b2e21), url(../img/nutrition.jpg);
 }
 
 .card__picture--6 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#838383), to(#2e2e2e)), url(../img/hmm.jpg);
-  background-image: linear-gradient(to right bottom, #838383, #2e2e2e), url(../img/hmm.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#838383), to(#2e2e2e)), url(../img/css.jpeg);
+  background-image: linear-gradient(to right bottom, #838383, #2e2e2e), url(../img/css.jpeg);
 }
 
 .card__heading {
